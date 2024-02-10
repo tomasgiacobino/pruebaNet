@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Caslon Antique', serif !important;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .App {
+    min-height: 100vh;
+    width: 85vw;
+    max-width: 1900px;
+    margin: 0rem auto;
+  }
+  
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #f6f6f6;
+    color: #3B2315;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90px;
+    color: #3B2315;
+  }
+  
+  .navbar-menu-container {
+    display: none;
+  }
+  
+  .navbar-links-container a {
+    margin-right: 3rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .btnContactame {
+    padding: 0.9rem 1.75rem;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+    color: #3B2315;
+  }
+  
+  .btnNavBar {
+    padding: 0.9rem 1.75rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+    color: #3B2315;
+  }
+  
+  .navbar-cart-icon {
+    font-size: 1.15rem;
+  }
+  
+  .primary-button:hover {
+    background-color: rgb(234, 234, 234);
+  }
+  
+  .navbar-menu-container svg {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .home-banner-container {
+    position: relative;
+    display: flex;
+    padding-top: 5rem;
+  }
+  
+  .apart-banner-container {
+    position: relative;
+    display: flex;
+    padding-top: 15rem;
+  }
+  
+  .home-bannerImage-container {
+    position: absolute;
+    top: -100px;
+    right: -170px;
+    z-index: -2;
+    max-width: 700px;
+  }
+  
+  .apartment {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 36rem;
+    color: white;
+    border-radius: 2rem;
+  }
+  
+  #apartment-1 {
+    margin-bottom: 10rem;
+  }
+  
+  #apartment-2 {
+    margin-bottom: 10rem;
+  }
+  
+  #apartment-3 {
+    margin-bottom: 10rem;
+  }
+  
+  #apartment-4 {
+    margin-bottom: 10rem;
+  }
+  
+  .normal {
+    color: #ffcc70;
+    border: 2px solid #ffcc70;
+    background-color: f6f6f6;
+    flex-direction: row;
+  }
+  
+  .reverse {
+    background-color: f6f6f6;
+    border: 2px solid #3b2315;
+    color: #bb5d1d;
+    flex-direction: row-reverse;
+  }
+  
+  .text-container {
+    flex: 1;
+    padding: 0 10px;
+    margin-right: 30px;
+    font-size: 30px;
+    height: inherit;
+    justify-content: space-evenly;
+  }
+  
+  .descripcionIncluye {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .image-gallery {
+    flex: 1;
+  }
+  
+  .apart-container {
+    margin-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .image-gallery {
+    width: 100%;
+  }
+  
+  .text-container {
+    width: 100%;
+  }
+  
+  .image-container,
+  .image-gallery {
+    flex: 1;
+  }
+  
+  .text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .apart-title {
+    margin-bottom: 10px;
+  }
+  
+  .normal-order {
+    flex-direction: row;
+  }
+  
+  .reverse-order {
+    flex-direction: row-reverse;
+  }
+  
+  .apart-bannerImage-container {
+    position: absolute;
+    top: 200px;
+    right: -170px;
+    z-index: -2;
+    max-width: 700px;
+  }
+  
+  .home-image-section {
+    max-width: 600px;
+    flex: 1;
+  }
+  
+  .home-text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .primary-text {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    max-width: 500px;
+    color: #bb5d1d;
+    margin: 1.5rem 0rem;
+  }
+  
+  .btnVerMas {
+    padding: 1rem 2.5rem;
+    background-color: #ffcc70;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btnVerMas svg {
+    margin-left: 0.75rem;
+    font-size: 1.5rem;
+  }
+  
+  .btnVerMas:hover {
+    background-color: #3b2315;
+  }
+  
+  .about-bannerImage-container {
+    position: absolute;
+    top: -100px;
+    left: -170px;
+    z-index: -2;
+    max-width: 700px;
+  }
+  
+  .divAbout {
+    margin-top: 8rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-background-image-container {
+    position: absolute;
+    left: -150px;
+    z-index: -2;
+  }
+  
+  .about-section-image-container {
+    flex: 0.9;
+    margin-right: 1rem;
+  }
+  
+  .containerAbout {
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+  }
+  
+  .textosAbout {
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+  }
+  
+  .primary-heading {
+    font-size: clamp(2rem, 5vw, 4rem);
+    color: #3b2315;
+  }
+  
+  .primary-subheading {
+    font-weight: 700;
+    color: #ffcc70;
+    font-size: 2rem;
+  }
+  
+  .about-buttons-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 3rem;
+  }
+  
+  .btnVideo {
+    margin-left: 2rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: #3b2315;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btnVideo svg {
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
+  
+  .divContacto {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif !important;
+    height: auto;
+  }
+  
+  .divContactos {
+    display: flex;
+    width: 100%;
+    height: 30rem;
+    justify-content: space-around;
+  }
+  
+  .txtContactame {
+    font-size: 80px;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .contactoWpp {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    justify-content: space-evenly;
+    font-size: 30px;
+  }
+  
+  .iconoWpp {
+    size: 100px;
+  }
+  
+  .contactoMail {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    justify-content: space-evenly;
+  }
+  
+  .footer-wrapper {
+    margin: 6rem 0rem;
+    display: flex;
+    margin-top: 10rem;
+  }
+  
+  .footer-logo-container {
+    max-width: 200px;
+  }
+  
+  .footer-icons {
+    margin-top: 2.5rem;
+  }
+  
+  .footer-icons svg {
+    font-size: 1.5rem;
+    margin-right: 1.25rem;
+    color: #585858;
+  }
+  
+  .footer-section-two {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .footer-section-columns {
+    display: flex;
+    flex-direction: column;
+    min-width: 190px;
+  }
+  
+  .footer-section-columns span {
+    margin: 0.25rem 0rem;
+    font-weight: 600;
+    color: #4c4c4c;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1000px) {
+    .navbar-links-container a {
+      margin-right: 1rem;
+      font-size: 1rem;
+    }
+  
+    .btnContactame,
+    .btnNavBar {
+      padding: 0.8rem 1.5rem;
+    }
+  
+    .home-bannerImage-container,
+    .apart-bannerImage-container,
+    .about-bannerImage-container,
+    .about-background-image-container {
+      max-width: 400px; /* Ajustamos el ancho máximo */
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .navbar-links-container {
+      display: none;
+    }
+  
+    .navbar-menu-container {
+      display: flex;
+    }
+  
+    .home-banner-container,
+    .apart-banner-container,
+    .divAbout {
+      padding-top: 3rem; /* Ajustamos el espacio superior */
+    }
+  
+    .home-bannerImage-container,
+    .apart-bannerImage-container,
+    .about-bannerImage-container,
+    .about-background-image-container {
+      display: none; /* Ocultamos las imágenes en dispositivos móviles */
+    }
+  
+    .home-image-section,
+    .about-section-image-container {
+      max-width: 300px; /* Ajustamos el ancho máximo */
+    }
+  
+    .primary-heading {
+      max-width: 90%;
+      text-align: center;
+    }
+  
+    .primary-text {
+      max-width: 80%;
+      text-align: center;
+    }
+  
+    .home-text-section,
+    .aboutTextos {
+      margin-top: 2rem;
+    }
+  
+    .divAbout {
+      margin-top: 5rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .App {
+      max-width: 95vw;
+    }
+  }
+  
