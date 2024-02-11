@@ -27,27 +27,12 @@ const About = forwardRef((props, ref) => {
 
           </div>
         </div>
-        <div className="carrouselAbout">
+        <div>
           <CarrouselAbout />
         </div>
 
 
       </div>
-
-      {/* <div className="about-buttons-container">
-          <button onClick={() => handleScrollToApartment(1)} className="btnVerMas">
-            Apart 1
-          </button>
-          <button onClick={() => handleScrollToApartment(2)} className="btnVerMas">
-            Apart 2
-          </button>
-          <button onClick={() => handleScrollToApartment(3)} className="btnVerMas">
-            Apart 3
-          </button>
-          <button onClick={() => handleScrollToApartment(4)} className="btnVerMas">
-            Apart 4
-          </button>
-        </div> */}
     </div>
   );
 });
