@@ -9,10 +9,13 @@ import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
-import ImgCarrousel1 from "../Assets/images/Entrada/entrada2.jpeg";
-import ImgCarrousel2 from "../Assets/images/Entrada/entrada3.jpeg";
-import ImgCarrousel3 from "../Assets/images/Entrada/exterior.webp";
-import ImgCarrousel4 from "../Assets/images/Entrada/exterior2.webp";
+import ImgCarrousel1 from "../Assets/images/Patio/patio1.jpeg";
+import ImgCarrousel2 from "../Assets/images/Patio/patio2.jpeg";
+import ImgCarrousel3 from "../Assets/images/Patio/ventana.jpeg";
+import ImgCarrousel4 from "../Assets/images/Patio/pasillo.jpeg";
+import ImgCarrousel5 from "../Assets/images/Cocina/cocina1.jpeg";
+import ImgCarrousel6 from "../Assets/images/Cocina/cocina2.jpeg";
+import ImgCarrousel7 from "../Assets/images/Cocina/cocina7.jpeg";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -32,6 +35,18 @@ const images = [
   {
     label: 4,
     img: ImgCarrousel4,
+  },
+  {
+    label: 5,
+    img: ImgCarrousel5,
+  },
+  {
+    label: 6,
+    img: ImgCarrousel6,
+  },
+  {
+    label: 7,
+    img: ImgCarrousel7,
   },
 ];
 

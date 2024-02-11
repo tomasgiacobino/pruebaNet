@@ -5,6 +5,11 @@
   font-family: 'Caslon Antique', serif !important;
 }
 
+html,body{
+  width: 100%;
+  overflow-x: hidden;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -83,16 +88,12 @@ nav {
   cursor: pointer;
 }
 
-.home-banner-container {
-  position: relative;
-  display: flex;
-  padding-top: 5rem;
-}
+/* SECCION HOME */
 
-.apart-banner-container{
+.home-banner-container {
+  padding-top: 6rem;
   position: relative;
   display: flex;
-  padding-top: 15rem;
 }
 
 .home-bannerImage-container {
@@ -102,6 +103,96 @@ nav {
   z-index: -2;
   max-width: 700px;
 }
+
+.home-image-section {
+  max-width: 600px;
+  flex: 1;
+}
+
+.home-text-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.primary-heading {
+  font-size: 4rem;
+  color:#3B2315;
+}
+
+.primary-text {
+  font-size: 30px;
+  max-width: 600px;
+  color: #BB5D1D;
+  margin: 1.5rem 0rem;
+}
+
+
+
+/* SECCION HOME */
+
+/* SECCION ABOUT */
+
+.divAbout {
+  margin-top: 8rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-bannerImage-container{
+  position: absolute;
+  top: -100px;
+  left: -170px;
+  z-index: -2;
+  max-width: 700px;
+}
+
+.about-container{
+  display: flex;
+  padding-top: 4rem;
+  flex-direction: row-reverse;
+}
+
+.textosAbout{
+  height: inherit;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 8rem;
+}
+
+.txtEspaciosComunes{
+  font-weight: 500;
+  color: #FFCC70;
+  font-size: 4rem;
+}
+
+
+
+.divDescEspaciosComunes{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: 200px;
+  font-size: 43px;
+  margin-bottom: 90px;
+}
+
+/* SECCION ABOUT */
+
+.apart-banner-container{
+  position: relative;
+  display: flex;
+  padding-top: 15rem;
+}
+
+
 
 .apartment {
   display: flex;
@@ -241,27 +332,7 @@ nav {
   max-width: 700px;
 }
 
-.home-image-section {
-  max-width: 600px;
-  flex: 1;
-}
 
-.home-text-section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-
-
-.primary-text {
-  font-size: clamp(1rem, 3vw, 1.5rem);
-  max-width: 500px;
-  color: #BB5D1D;
-  margin: 1.5rem 0rem;
-}
 
 .btnVerMas {
   padding: 1rem 2.5rem;
@@ -288,17 +359,6 @@ nav {
   background-color: #3B2315;
 }
 
-.about-bannerImage-container{
-  position: absolute;
-  top: -100px;
-  left: -170px;
-  z-index: -2;
-  max-width: 700px;
-}
-
-
-
-
 .about-background-image-container {
   position: absolute;
   left: -150px;
@@ -310,38 +370,6 @@ nav {
   margin-right: 1rem;
 }
 
-.divAbout {
-  margin-top: 8rem;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.containerAbout {
-  padding-top: 5rem;
-  padding-bottom: 15rem;
-  flex: 1;
-  justify-content: space-around;
-  align-items: center;
-  display: flex;
-}
-
-.textosAbout{
-  display: flex;
-  flex-direction: column;
-  width: 60rem;
-}
-
-.primary-heading {
-  font-size: clamp(2rem, 5vw, 4rem);
-  color:#3B2315;
-}
-
-.primary-subheading {
-  font-weight: 700;
-  color: #FFCC70;
-  font-size: 2rem;
-}
 
 .about-buttons-container {
   display: flex;
@@ -467,7 +495,8 @@ nav {
     font-size: 1rem;
   }
 
-  .home-bannerImage-container {
+  .home-bannerImage-container,
+  .about-bannerImage-container {
     max-width: 600px;
   }
 }
@@ -484,6 +513,8 @@ nav {
     display: flex;
   }
 
+  /* SECCIONHOME */
+
   .home-bannerImage-container {
     max-width: 450px;
   }
@@ -494,32 +525,79 @@ nav {
     justify-content: center;
   }
 
+    
+  .home-text-section{
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+
+
+  .primary-heading {
+    color: #3B2315;
+    text-align: center;
+    max-width: 100%;
+    font-size: 3rem;
+  }
+
+  .primary-text {
+    text-align: center;
+    max-width: 100%;
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+
+  /* SECCIONHOME */
+
+  /* SECCCIONABOUT */
+
+
   .divAbout {
-    flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+
+  }
+
+  .about-container{
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  .containerAbout{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .divAbout {
-    flex-direction: column;
+
+  .txtEspaciosComunes {
+    text-align: center;
+    max-width: 70%;
   }
 
+
   .textosAbout{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding-left: 0px;
+
     
-    .primary-heading{
-      font-size: 25px;
-      padding-top: 1rem;
+    .txtEspaciosComunes{
+      font-size: 40px;
       padding-bottom: 3rem;
     }
   }
+
+  .divDescEspaciosComunes {
+    text-align: center;
+    font-size: 30px;
+    justify-content: space-around;
+  }
+
+  .carrouselAbout{
+    max-width: 40%;
+  }
+
+  /* SECCIONABOUT */
 
   .apartment{
     display: flex;
@@ -595,62 +673,6 @@ nav {
     width: 200px;
   }
 
-  .home-image-section,
-  .about-section-image-container {
-    width: 100%;
-    max-width: 400px;
-  }
-
-  .primary-heading {
-    color: #3B2315;
-    text-align: center;
-    max-width: 90%;
-  }
-
-  .primary-text {
-    text-align: center;
-    max-width: 80%;
-  }
-
-  .home-text-section,
-  .aboutTextos {
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
-  }
-
-  .btnVerMas {
-    font-size: 1rem;
-    padding: 0.8rem 2rem;
-    cursor: pointer;
-  }
-
-  .divAbout {
-    margin-top: 5rem !important;
-  }
-
-  .about-buttons-container {
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .primary-subheading {
-    text-align: center;
-  }
-
-  .btnVideo {
-    margin-left: 0rem !important;
-    margin-top: 1rem;
-    font-size: 1rem !important;
-  }
-
-  .btnVideo svg {
-    margin-right: 0.5rem !important;
-  }
-
-  .about-section-image-container {
-    margin-right: 0rem !important;
-  }
  
   .footer-wrapper {
     flex-direction: column;
@@ -671,7 +693,7 @@ nav {
 }
 @media (max-width: 600px) {
   .home-bannerImage-container,
-  .about-background-image-container {
+  .about-bannerImage-container {
     display: none;
   }
 }

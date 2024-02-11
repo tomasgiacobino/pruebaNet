@@ -2,6 +2,7 @@ import React, { forwardRef } from "react";
 import BannerBackground from "../Assets/home-banner-background2.png";
 import MicrowaveIcon from '@mui/icons-material/Microwave';
 import WifiIcon from '@mui/icons-material/Wifi';
+import CarrouselAbout from './CarrouselAbout'
 
 const About = forwardRef((props, ref) => {
   const handleScrollToApartment = (apartmentId) => {
@@ -13,36 +14,40 @@ const About = forwardRef((props, ref) => {
 
   return (
     <div ref={ref} id="about" className="divAbout">
-      <div className="about-bannerImage-container">
-        <img src={BannerBackground} alt="banner-background" />
-      </div>
-      <div className="containerAbout">
+      <div className="about-container">
+        <div className="about-bannerImage-container">
+          <img src={BannerBackground} alt="banner-background" />
+        </div>
+
         <div className="textosAbout">
-          <p className="primary-subheading">Espacios comunes</p>
-          <div className="primary-heading">
-            <p className="salaEstar">Sala de estar con desayunador</p>
-            <p>Cocina</p>
+          <h3 className="txtEspaciosComunes">Espacios comunes</h3>
+          <div className="divDescEspaciosComunes">
+          <p className="salaEstar">Sala de estar con desayunador</p>
+          <p className="cocina">Cocina</p>
+
           </div>
         </div>
-        <div className="about-buttons-container">
-          {/* Botón para desplazarse a Apart1 */}
+        <div className="carrouselAbout">
+          <CarrouselAbout />
+        </div>
+
+
+      </div>
+
+      {/* <div className="about-buttons-container">
           <button onClick={() => handleScrollToApartment(1)} className="btnVerMas">
             Apart 1
           </button>
-          {/* Botón para desplazarse a Apart2 */}
           <button onClick={() => handleScrollToApartment(2)} className="btnVerMas">
             Apart 2
           </button>
-          {/* Botón para desplazarse a Apart3 */}
           <button onClick={() => handleScrollToApartment(3)} className="btnVerMas">
             Apart 3
           </button>
-          {/* Botón para desplazarse a Apart4 */}
           <button onClick={() => handleScrollToApartment(4)} className="btnVerMas">
             Apart 4
           </button>
-        </div>
-      </div>
+        </div> */}
     </div>
   );
 });
