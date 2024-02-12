@@ -556,12 +556,11 @@ nav {
 
   .divAbout {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     align-items: center;
     justify-content: center;
     margin-top: 5px;
-
   }
 
   .about-container{
@@ -593,9 +592,9 @@ nav {
     justify-content: space-around;
   }
 
-  /* .carrouselAbout{
-    max-width: 40%;
-  } */
+  .carrouselAbout{
+    width: 60%;
+  }
 
   /* SECCIONABOUT */
 

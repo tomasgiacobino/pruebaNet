@@ -4,17 +4,10 @@ import MicrowaveIcon from '@mui/icons-material/Microwave';
 import WifiIcon from '@mui/icons-material/Wifi';
 import CarrouselAbout from './CarrouselAbout'
 
-const About = forwardRef((props, ref) => {
-  const handleScrollToApartment = (apartmentId) => {
-    const apartmentElement = document.getElementById(`apartment-${apartmentId}`);
-    if (apartmentElement) {
-      apartmentElement.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
-
+const About = () => {
   return (
-    <div ref={ref} id="about" className="divAbout">
-      <div className="about-container">
+    <div className="divAbout">
+      <div id="about" className="about-container">
         <div className="about-bannerImage-container">
           <img src={BannerBackground} alt="banner-background" />
         </div>
@@ -27,7 +20,7 @@ const About = forwardRef((props, ref) => {
 
           </div>
         </div>
-        <div>
+        <div className="carrouselAbout">
           <CarrouselAbout />
         </div>
 
@@ -35,6 +28,6 @@ const About = forwardRef((props, ref) => {
       </div>
     </div>
   );
-});
+}
 
 export default About;
