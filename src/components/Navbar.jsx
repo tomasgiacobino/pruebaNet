@@ -13,22 +13,6 @@ import CallIcon from '@mui/icons-material/Call';
 import Logo from '../Assets/logo.png';
 
 const Navbar = () => {
-  const [openMenu, setOpenMenu] = useState(false);
-  const menuList = [
-    {
-      menu: "Inicio",
-      icon: <HomeIcon />,
-    },
-    {
-      menu: "Aparts",
-      icon: <InfoIcon />,
-    },
-    {
-      menu: "Contacto",
-      icon: <CallIcon />,
-    }
-  ];
-
   const scrollToHome = () => {
     const homeSection = document.getElementById("home");
     if(homeSection){
@@ -44,16 +28,36 @@ const Navbar = () => {
   };
 
   const scrollToContact = () => {
-    const contactSection = document.getElementById("contact");
+    const contactSection = document.getElementById("aparts");
     if(contactSection){
       contactSection.scrollIntoView({behavior:"smooth"});
     }
   };
 
+  const [openMenu, setOpenMenu] = useState(false);
+  const menuList = [
+    {
+      menu: "Inicio",
+      icon: <HomeIcon/>,
+      action: scrollToHome,
+    },
+    {
+      menu: "Servicios",
+      icon: <InfoIcon/>,
+      action: scrollToAbout,
+    },
+    {
+      menu: "Aparts",
+      icon: <CallIcon/>,
+      action: scrollToContact,
+    }
+  ];
+
   return (
     <nav>
       <div className="nav-logo-container">
         <img
+        className="logoTerra"
           src={Logo}
           style={{
             position: "absolute",
@@ -67,8 +71,8 @@ const Navbar = () => {
       </div>
       <div className="navbar-links-container">
         <button className="btnNavBar" onClick = {scrollToHome}>Inicio</button>
-        <button className="btnNavBar" onClick={scrollToAbout}>Departametos</button>
-        <button className="btnContactame" onClick={scrollToContact}>Contactame</button>
+        <button className="btnNavBar" onClick={scrollToAbout}>Servicios</button>
+        <button className="btnContactame" onClick={scrollToContact}>Aparts</button>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
@@ -83,7 +87,7 @@ const Navbar = () => {
           <List>
             {menuList.map((item) => (
               <ListItem key={item.menu} disablePadding>
-                <ListItemButton>
+                <ListItemButton onClick={item.action}>
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.menu}></ListItemText>
                 </ListItemButton>

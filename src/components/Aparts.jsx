@@ -19,7 +19,7 @@ const Apart = ({ apartmentsData }) => {
   }, [apartmentsData]);
 
   return (
-    <div className="apart-container">
+    <div id="aparts" className="apart-container">
       {apartments.map((apartment) => (
         <div key={apartment.id} id={`apartment-${apartment.id}`} className={`apartment ${apartment.alternateStyle}`}>
           <div className="text-container">

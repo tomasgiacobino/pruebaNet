@@ -6,11 +6,14 @@ import CarrouselHome from './CarrouselHome';
 const Home = () => {
   return (
     <div className="home-container">
+
       <Navbar />
+      
       <div id="home" className="home-banner-container">
         <div className="home-bannerImage-container">
           <img src={BannerBackground} alt="banner-background" />
         </div>
+
         <div className="home-text-section">
           <h1 className="primary-heading">
             Nuestros Aparts
