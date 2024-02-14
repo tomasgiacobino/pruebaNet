@@ -588,6 +588,7 @@ nav {
   }
 
   .divDescEspaciosComunes {
+    padding-top: 1rem;
     text-align: center;
     font-size: 2rem;
     justify-content: space-around;
