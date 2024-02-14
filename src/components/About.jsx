@@ -16,8 +16,8 @@ const About = () => {
         <div className="textosAbout">
           <h3 className="txtEspaciosComunes">Espacios comunes</h3>
           <div className="divDescEspaciosComunes">
-            <p className="salaEstar"><BakeryDiningIcon className="salaEstarIcon" /> Sala de estar con desayunador</p>
-            <p className="cocina"> <CountertopsIcon className="cocinaIcon" /> Cocina</p>
+            <p className="salaEstar"><BakeryDiningIcon className="salaEstarIcon" />Sala de estar con desayunador</p>
+            <p className="cocina"> <CountertopsIcon className="cocinaIcon" />Cocina</p>
           </div>
           <div className="apiMaps">
             <div className="mapContainer">

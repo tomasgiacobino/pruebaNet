@@ -170,7 +170,7 @@ nav {
 
 
 .txtEspaciosComunes{
-  text-align: end;
+  text-align: center;
   font-weight: 500;
   font-size: 4rem;
   color: #FFCC70;
@@ -188,6 +188,8 @@ nav {
     align-items: center;
     display: flex;
     gap: 10px;
+    justify-content: center;
+    max-width: 100%;
 
     .salaEstarIcon{
       font-size: 3rem;
@@ -349,15 +351,6 @@ nav {
   z-index: -2;
   max-width: 700px;
 }
-
-/* .text-container {
-  flex: 1;
-  padding: 0 10px;
-  margin-right: 30px;
-  font-size: 30px;
-  height: inherit;
-  justify-content: space-evenly;
-} */
 
 .descripcionIncluye{
   display: flex;
