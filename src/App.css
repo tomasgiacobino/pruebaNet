@@ -209,21 +209,21 @@ nav {
 
 .apiMaps {
   padding: 20px;
-  width: 100%;
-  height: 300px; /* Establece la altura deseada */
+  width: 100% !important; 
+  height: 300px !important; /* Establece la altura deseada */
 }
 
 .mapContainer {
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .iframe {
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   border: 2px solid #ccc; /* Borde opcional */
   border-radius: 10px; /* Borde redondeado opcional */
-  max-width: 100%;
+  max-width: 100% !important;
 }
 
 
