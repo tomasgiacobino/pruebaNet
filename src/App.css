@@ -593,7 +593,7 @@ nav {
     justify-content: space-around;
 
     .salaEstarIcon{
-      display: none;
+      gap: 0px;
     }
 
   }
