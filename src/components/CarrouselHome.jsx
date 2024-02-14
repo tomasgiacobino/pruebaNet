@@ -8,30 +8,30 @@ import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
-import ImgCarrousel1 from "../Assets/images/Entrada/entrada2.jpeg";
-import ImgCarrousel2 from "../Assets/images/Entrada/entrada3.jpeg";
-import ImgCarrousel3 from "../Assets/images/Entrada/exterior.webp";
-import ImgCarrousel4 from "../Assets/images/Entrada/exterior2.webp";
+import Entrada1 from "../Assets/images/Entrada/entradalejos.webp";
+import Entrada2 from "../Assets/images/Entrada/entradacerca1.webp";
+import Exterior1 from "../Assets/images/Entrada/exterior.webp";
+import Exterior2 from "../Assets/images/Entrada/exterior1.webp";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
     label: 1,
-    img: ImgCarrousel1,
+    img: Entrada1,
   },
   {
     label: 2,
-    img: ImgCarrousel2,
+    img: Entrada2,
   },
   {
-    label: 3,
-    img: ImgCarrousel3,
+    label: 5,
+    img: Exterior1,
   },
   {
-    label: 4,
-    img: ImgCarrousel4,
-  },
+    label: 6,
+    img: Exterior2
+  }
 ];
 
 function SwipeableTextMobileStepper() {

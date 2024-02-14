@@ -1,5 +1,5 @@
 
-import BannerBackground from "../Assets/home-banner-background2.png";
+import BannerBackground from "../Assets/fondo2W.webp";
 import CarrouselAbout from './CarrouselAbout';
 import CountertopsIcon from '@mui/icons-material/Countertops';
 import BakeryDiningIcon from '@mui/icons-material/BakeryDining';

@@ -10,7 +10,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import CallIcon from '@mui/icons-material/Call';
-import Logo from '../Assets/logo.png';
+import Logo from '../Assets/logoW.webp';
 
 const Navbar = () => {
   const scrollToHome = () => {

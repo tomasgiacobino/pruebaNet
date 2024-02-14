@@ -8,44 +8,44 @@ import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
-import ImgCarrousel1 from "../Assets/images/Patio/patio1.jpeg";
-import ImgCarrousel2 from "../Assets/images/Patio/patio2.jpeg";
-import ImgCarrousel3 from "../Assets/images/Patio/ventana.jpeg";
-import ImgCarrousel4 from "../Assets/images/Patio/pasillo.jpeg";
-import ImgCarrousel5 from "../Assets/images/Cocina/cocina1.jpeg";
-import ImgCarrousel6 from "../Assets/images/Cocina/cocina2.jpeg";
-import ImgCarrousel7 from "../Assets/images/Cocina/cocina7.jpeg";
+import Patio from "../Assets/images/Patio/patio.webp";
+import Sillon from "../Assets/images/Patio/sillon.webp";
+import Ventana from "../Assets/images/Patio/ventana.webp";
+import Pasillo from "../Assets/images/Patio/pasillo.webp";
+import Puerta from "../Assets/images/Cocina/puerta.webp";
+import Pava from "../Assets/images/Cocina/pava.webp";
+import Calefon from "../Assets/images/Cocina/calefon.webp";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
     label: 1,
-    img: ImgCarrousel1,
+    img: Patio,
   },
   {
     label: 2,
-    img: ImgCarrousel2,
+    img: Sillon,
   },
   {
     label: 3,
-    img: ImgCarrousel3,
+    img: Ventana,
   },
   {
     label: 4,
-    img: ImgCarrousel4,
+    img: Pasillo,
   },
   {
     label: 5,
-    img: ImgCarrousel5,
+    img: Puerta,
   },
   {
     label: 6,
-    img: ImgCarrousel6,
+    img: Pava,
   },
   {
     label: 7,
-    img: ImgCarrousel7,
+    img: Calefon,
   },
 ];
 

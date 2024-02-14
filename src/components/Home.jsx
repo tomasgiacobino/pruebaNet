@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-import BannerBackground from "../Assets/home-banner-background.png";
+import BannerBackground from "../Assets/fondo1.webp";
 import CarrouselHome from './CarrouselHome';
 
 const Home = () => {
