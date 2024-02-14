@@ -9,22 +9,22 @@ import { WhatsappIcon, WhatsappShareButton } from "react-share";
 
 const importAllC1 = (r) => r.keys().map(r);
 const imagesC1 = importAllC1(
-  require.context("./Assets/images/cuarto1/", false, /\.(jpeg|webp)$/)
+  require.context("./Assets/images/cuarto1/", false, /\.(webp)$/)
 );
 
 const importAllC2 = (r) => r.keys().map(r);
 const imagesC2 = importAllC2(
-  require.context("./Assets/images/cuarto2/", false, /\.(jpeg|webp)$/)
+  require.context("./Assets/images/cuarto2/", false, /\.(webp)$/)
 );
 
 const importAllC3 = (r) => r.keys().map(r);
 const imagesC3 = importAllC3(
-  require.context("./Assets/images/cuarto3/", false, /\.(jpeg|webp)$/)
+  require.context("./Assets/images/cuarto3/", false, /\.(webp)$/)
 );
 
 const importAllC4 = (r) => r.keys().map(r);
 const imagesC4 = importAllC4(
-  require.context("./Assets/images/cuarto4/", false, /\.(jpeg|webp)$/)
+  require.context("./Assets/images/cuarto4/", false, /\.(webp)$/)
 );
 
 function App() {
