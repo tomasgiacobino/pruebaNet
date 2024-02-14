@@ -592,8 +592,8 @@ nav {
     font-size: 2rem;
     justify-content: space-around;
 
-    .salaEstar{
-      gap: 0px;
+    .salaEstarIcon{
+      display: none;
     }
 
   }
