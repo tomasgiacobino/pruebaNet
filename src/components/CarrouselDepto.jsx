@@ -27,7 +27,7 @@ function CarrouselDepto({ apartment }) {
   };
 
   return (
-    <div className="atras">
+    <div id="aparts" className="atras">
       <Paper
         div
         elevation={24}
