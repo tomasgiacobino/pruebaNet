@@ -74,8 +74,8 @@ const Navbar = () => {
         <button className="btnNavBar" onClick={scrollToAbout}>Servicios</button>
         <button className="btnContactame" onClick={scrollToContact}>Aparts</button>
       </div>
-      <div className="navbar-menu-container">
-        <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
+      <div className="navbar-menu-container" style={{position:"fixed", top:27, right:26}}>
+        <HiOutlineBars3 size={34} onClick={() => setOpenMenu(true)} />
       </div>
       <Drawer anchor="right" open={openMenu} onClose={() => setOpenMenu(false)}>
         <Box
