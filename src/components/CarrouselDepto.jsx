@@ -27,7 +27,7 @@ function CarrouselDepto({ apartment }) {
   };
 
   return (
-    <div id="aparts" className="atras">
+    <div className="atras">
       <Paper
         div
         elevation={24}
@@ -80,6 +80,7 @@ function CarrouselDepto({ apartment }) {
       >
         {apartment.images[0].map((image, index) => (
           <SwiperSlide onClick={() => openModal(image)} key={index}>
+            {/* <LazyLoadImage alt={`Slide ${index}`} effect="blur" src={image} /> */}
             <LazyLoadImage
               alt={`Slide ${index}`}
               effect="blur"
@@ -88,7 +89,7 @@ function CarrouselDepto({ apartment }) {
                 maxWidth: "100%",
                 maxHeight: "50vh",
                 objectFit: "contain",
-              }}
+              }} // Ajustar tamaño máximo y modo de ajuste de la imagen
             />
           </SwiperSlide>
         ))}
@@ -127,14 +128,12 @@ function CarrouselDepto({ apartment }) {
         />
 
         <CloseIcon
-          fontSize="large"
           onClick={closeModal}
           style={{
             position: "absolute",
             top: "10px",
             right: "10px",
             zIndex: 999,
-            
           }}
         />
       </Modal>
