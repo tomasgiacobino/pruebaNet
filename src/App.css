@@ -168,6 +168,12 @@ nav {
   align-items: center;
 }
 
+.txtContamos{
+  font-size: 3rem;
+  text-align: center;
+  color:#BB5D1D ;
+}
+
 
 .txtEspaciosComunes{
   text-align: center;
@@ -415,8 +421,27 @@ nav {
   cursor: pointer;
 }
 
-@media screen and (min-width: 801px) and (max-width:1023px){
+@media screen and (min-width: 801px) and (max-width:1044px){
+
+  .navbar-links-container a {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  
+  .primary-button {
+    font-size: 1rem;
+  }
+  
+
+  
+
+
   /* SECCION HOME */
+
+  .home-bannerImage-container{
+    max-width: 600px;
+    top: -90px;
+  }
 
   .home-banner-container{
     flex-direction: column;
@@ -435,6 +460,12 @@ nav {
 
 
   /* SECCION ABOUT */
+
+  .about-bannerImage-container{
+    top:200px;
+    max-width: 600px;
+  }
+
   .about-container{
     flex-direction: column;
   }
@@ -475,28 +506,13 @@ nav {
     justify-content: center;
     margin-top: 4rem;
  }
+
+
 }
 
-@media (max-width: 1000px) {
-  .navbar-links-container a {
-    margin-right: 1rem;
-    font-size: 1rem;
-  }
-  
-  .primary-button {
-    font-size: 1rem;
-  }
-
-  .home-bannerImage-container{
-    max-width: 600px;
-    top: -90px;
-  }
-
-  .about-bannerImage-container{
-    top:200px;
-    max-width: 600px;
-  }
-}
+/* @media (max-width: 1045px) {
+ 
+} */
 @media (max-width: 800px) {
 
   /* NAVBAR SECTION */
@@ -554,6 +570,12 @@ nav {
   /* SECCIONHOME */
 
   /* SECCCIONABOUT */
+
+  .about-bannerImage-container{
+    top:200px;
+    max-width: 600px;
+  }
+  
 
 
   .divAbout {
