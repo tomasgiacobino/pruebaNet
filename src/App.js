@@ -106,15 +106,13 @@ function App() {
         <Apartments apartments={apartamentos} />
         <Footer />
         <WhatsappShareButton
-          url={`https://wa.me/352750568?text=Estoy%20interesado%20en%20los%20apartamentos`}
           style={{
             position: "fixed",
             bottom: "1rem",
             right: "2rem",
-            
           }}
         >
-          <WhatsappIcon size={62} round />
+          <a target="_blank" href="https://wa.me/5493874081373?text=Estoy%20interesado%20en%20los%20apartamentos">   <WhatsappIcon size={62} round /> </a>
         </WhatsappShareButton>
         {/* <Photo /> */}
       </div>
